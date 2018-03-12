@@ -1,7 +1,7 @@
 {
-  "name": "redux-thunk",
+  "name": "redux-action-reducer",
   "version": "2.2.0",
-  "description": "Thunk middleware for Redux.",
+  "description": "Action-reducer middleware for Redux.",
   "main": "lib/index.js",
   "jsnext:main": "es/index.js",
   "typings": "./index.d.ts",
@@ -26,12 +26,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gaearon/redux-thunk.git"
+    "url": "https://github.com/FCO/redux-action-reducer.git"
   },
-  "homepage": "https://github.com/gaearon/redux-thunk",
+  "homepage": "https://github.com/FCO/redux-action-reducer",
   "keywords": [
     "redux",
-    "thunk",
+    "action-reducer",
     "middleware",
     "redux-middleware",
     "flux"
