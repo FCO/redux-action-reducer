@@ -2,7 +2,7 @@
   "name": "redux-action-reducer",
   "version": "0.0.1",
   "description": "Action-reducer middleware for Redux.",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "jsnext:main": "es/index.js",
   "typings": "./index.d.ts",
   "files": [
@@ -14,10 +14,10 @@
   ],
   "scripts": {
     "clean": "rimraf lib dist es",
-    "build": "npm run build:commonjs && npm run build:umd && npm run build:umd:min && npm run build:es",
+    "build": "npm run build:commonjs #&& npm run build:umd && npm run build:umd:min && npm run build:es",
     "prepublish": "npm run clean && npm run test && npm run build",
-    "posttest": "npm run lint",
-    "lint": "eslint src test",
+    "#posttest": "npm run lint",
+    "#lint": "eslint src test",
     "test": "cross-env BABEL_ENV=commonjs mocha --compilers js:babel-core/register --reporter spec test/*.js",
     "build:commonjs": "cross-env BABEL_ENV=commonjs babel src --out-dir lib",
     "build:es": "cross-env BABEL_ENV=es babel src --out-dir es",
